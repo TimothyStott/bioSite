@@ -160,13 +160,14 @@ header, nav, nav a{
 
 .card:hover .card__inner{
     transform: rotateY(180deg);
+
 }
 
 .card__inner--front, .card__back{
     position: absolute;
     width: 100%;
     height: 100%;
-    -webkit-backface-visibility: hidden; /* Safari */
+    -webkit-backface-visibility: hidden; 
     backface-visibility: hidden;
 }
 
@@ -232,16 +233,40 @@ header, nav, nav a{
 
 }
 
-
 .hobbies__photos{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    grid-template-rows: repeat(auto-fit,minmax(900px,1fr));
 }
 
-.hobbies__photos img{
-    display: inline;
+.hobbies__photos--rightText{
+    font-family: 'Merriweather', serif;
+    font-size: 100px;  
+    text-align: right;
 }
+
 
 .hobbies__sub--text{
     margin: 25px 100px;
+}
+
+.hobbies__photo--img1, .hobbies__photo--img2, .hobbies__photo--img3{   
+    background-color: var(--red);
+    background-blend-mode: darken;
+    background-image: url(img/bexar-arms-guns.jpg);
+    background-repeat:no-repeat;
+}
+.hobbies__photo--img2{   
+    background-image: url(img/philip-myrtorp-flight-resize.jpg);
+
+}
+.hobbies__photo--img3{   
+
+    background-image: url(img/greg-rosenke-weights.jpg);
+    background-repeat:no-repeat;
+}
+
+.hobbies__photo--img1:hover, .hobbies__photo--img2:hover, .hobbies__photo--img3:hover{
+    background-blend-mode: normal;
+
 }
