@@ -8,6 +8,7 @@
 }
 
 body{
+    box-sizing: border-box;
     font-family: 'Ubuntu', sans-serif;
     margin:0;
 }
@@ -17,6 +18,11 @@ h1{
     text-align: center;
     font-family: 'Merriweather', serif;
     font-size: var(--h1fontsize);
+}
+
+p{
+    color: #000;
+    font-size: 1.1em;
 }
 
 .title__text{
@@ -191,18 +197,24 @@ header, nav, nav a{
 
 .about__wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    align-items: center;
+    gap: .5em;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    grid-template-rows:  repeat(auto-fit,minmax(400px,1fr))
 }
 
 .about__text{
-    background-color: lightgray;
-    height: 500px;
+    padding: 0 25px;
+    
 }
 
 .about__photo{
-    background-color: #E63946;
-    height: 500px;
-    width: mi;
+    background-image: url(img/portrait.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 600px;
+    margin: 0 25px;
+
 }
 
 
@@ -210,23 +222,29 @@ header, nav, nav a{
     text-align: center;
     width: auto;
     height: auto;
-    margin-bottom: 20px;
+    margin-bottom: 25px;
+
+
 
 }
 
 .usmc__main--wrapper{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));
+    gap: .5em;
+    grid-template-columns: repeat(auto-fit,minmax(240px,1fr));   
 }
 
 .usmc__text{
     height: 500px;
-    background-color: lightgrey;
+    padding: 0 20px;
 }
 
 .usmc__photo{
-    height: 500px;
-    background-color: var(--red);
+    min-height: 500px;
+    background-image: url(img/huey-on-boat.jpg);
+    background-position: center;
+    background-size: cover;
+    margin: 0 25px;
 }
 
 .hobbies__wrapper{
@@ -243,6 +261,11 @@ header, nav, nav a{
     font-family: 'Merriweather', serif;
     font-size: 100px;  
     text-align: right;
+}
+
+.hobbies__photos--rightText p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
 }
 
 
@@ -269,4 +292,11 @@ header, nav, nav a{
 .hobbies__photo--img1:hover, .hobbies__photo--img2:hover, .hobbies__photo--img3:hover{
     background-blend-mode: normal;
 
+}
+
+footer{
+    text-align: right;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
