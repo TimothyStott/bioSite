@@ -231,6 +231,7 @@ nav a {
     background-size: cover;
     min-height: 600px;
     margin: 0 25px;
+    border-radius: 5px;
 
 }
 
@@ -262,9 +263,10 @@ nav a {
     background-position: center;
     background-size: cover;
     margin: 0 25px;
+    border-radius: 5px;
 }
 
-.hobbies__wrapper {}
+
 
 .hobbies__photos {
     display: grid;
@@ -276,6 +278,7 @@ nav a {
     font-family: 'Merriweather', serif;
     font-size: 100px;
     text-align: right;
+    padding: 0 15px;
 }
 
 .hobbies__photos--rightText p {
@@ -295,6 +298,8 @@ nav a {
     background-blend-mode: darken;
     background-image: url(img/bexar-arms-guns.jpg);
     background-repeat: no-repeat;
+    background-position: center;
+    max-height: 900px;
 }
 
 .hobbies__photo--img2 {
@@ -320,4 +325,8 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.fixed-footer{
+    position: relative;
 }
